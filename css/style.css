@@ -1,0 +1,133 @@
+/*Tags: .rodape .linha-rodape .coluna-rodape .links .icones*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rodape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1280px;
+    width: 95%;
+    background: #10182F;
+    border-radius: 6px;
+}
+
+.rodape .linha-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+}
+
+.linha-rodape .coluna-rodape h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.coluna-rodape .links {
+    margin-top: 20px;
+}
+
+.coluna-rodape .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.coluna-rodape .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.coluna-rodape .links li a:hover {
+    color: #fff;
+}
+
+.coluna-rodape p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.coluna-rodape form {
+    display: flex;
+    gap: 5px;
+}
+
+.coluna-rodape input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.coluna-rodape input::placeholder {
+    color: #ccc;
+}
+
+.coluna-rodape form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.coluna-rodape .icones {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.coluna-rodape .icones i {
+    color: #afb7c7;
+}
+
+.coluna-rodape .icones i:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .rodape {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+    }
+    .rodape .linha-rodape {
+    padding: 20px;
+    gap: 1rem;
+    }
+
+    .coluna-rodape form {
+    display: block;
+    }
+
+    .coluna-rodape form :where(input, button) {
+    width: 100%;
+    }
+
+    .coluna-rodape form button {
+        margin: 10px 0 0 0;
+    }
+
+}

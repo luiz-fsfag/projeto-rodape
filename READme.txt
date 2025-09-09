@@ -1,0 +1,1 @@
+https://www.codingnepalweb.com/create-responsive-footer-html-css-only
